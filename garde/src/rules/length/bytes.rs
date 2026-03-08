@@ -42,6 +42,7 @@ macro_rules! impl_via_len {
 }
 
 impl_via_len!(std::string::String);
+impl_via_len!(compact_str::CompactString);
 impl_via_len!(in<'a> &'a std::string::String);
 impl_via_len!(in<'a> &'a str);
 impl_via_len!(in<'a> std::borrow::Cow<'a, str>);

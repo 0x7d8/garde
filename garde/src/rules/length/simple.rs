@@ -44,6 +44,7 @@ macro_rules! impl_via_bytes {
 }
 
 impl_via_bytes!(std::string::String);
+impl_via_bytes!(compact_str::CompactString);
 impl_via_bytes!(in<'a> &'a std::string::String);
 impl_via_bytes!(in<'a> &'a str);
 impl_via_bytes!(in<'a> std::borrow::Cow<'a, str>);

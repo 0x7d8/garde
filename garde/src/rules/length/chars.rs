@@ -42,6 +42,7 @@ macro_rules! impl_via_chars {
 }
 
 impl_via_chars!(std::string::String);
+impl_via_chars!(compact_str::CompactString);
 impl_via_chars!(in<'a> &'a std::string::String);
 impl_via_chars!(in<'a> &'a str);
 impl_via_chars!(in<'a> std::borrow::Cow<'a, str>);
