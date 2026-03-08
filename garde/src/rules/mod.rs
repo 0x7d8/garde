@@ -37,6 +37,12 @@ impl AsStr for String {
     }
 }
 
+impl AsStr for compact_str::CompactString {
+    fn as_str(&self) -> &str {
+        compact_str::CompactString::as_str(self)
+    }
+}
+
 impl AsStr for std::borrow::Cow<'_, str> {
     fn as_str(&self) -> &str {
         std::borrow::Cow::as_ref(self)
